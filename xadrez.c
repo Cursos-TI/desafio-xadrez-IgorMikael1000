@@ -3,35 +3,23 @@
 int main() {
     
     //DECLARAÇÃO DE VARIÁVEIS
-    int torre, bispo, rainha;
-
-    //SOLICITA AO USUÁRIO O NUMERO DE CASAS PARA A TORRE ANDAR
-    printf("Digite o número de casas para a torre andar: ");
-    scanf("%d", &torre);
+    int torre = 1, bispo = 1;
 
     //REALIZA O MOVIMENTO DA TORRE
-    while(torre != 0){
-        printf("Direita\n")
-        torre--;
+    while(torre <= 5){
+        printf("Direita\n");
+        torre++;
     }
     
-    //SOLICITA AO USUÁRIO O NUMERO DE CASAS PARA O BISPO ANDAR
-    printf("Digite o número de casas para o bispo andar: ");
-    scanf("%d", &bispo);
-
     //REALIZA O MOVIMENTO DO BISPO
     do{
         printf("Cima, Direita\n");
-        bispo--;
+        bispo++;
 
-    } while(bispo != 0);
-
-    //SOLICITA AO USUÁRIO O NUMERO DE CASAS PARA A RAINHA ANDAR
-    printf("Digite o número de casas para a rainha andar: ");
-    scanf("%d", &rainha);
+    } while(bispo <= 5);
 
     //REALIZA O MOVIMENTO DA RAINHA
-    for(rainha; != 0; rainha--){
+    for(rainha = 1; <= 8; rainha++){
         printf("Esquerda\n");
     }
 
