@@ -19,7 +19,7 @@ int main() {
     } while(bispo <= 5);
 
     //REALIZA O MOVIMENTO DA RAINHA
-    for(rainha = 1; <= 8; rainha++){
+    for(int rainha = 1; <= 8; rainha++){
         printf("Esquerda\n");
     }
 
