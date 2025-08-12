@@ -1,32 +1,39 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
-
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    
+    //DECLARAÇÃO DE VARIÁVEIS
+    int torre, bispo, rainha;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    //SOLICITA AO USUÁRIO O NUMERO DE CASAS PARA A TORRE ANDAR
+    printf("Digite o número de casas para a torre andar: ");
+    scanf("%d", &torre);
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    //REALIZA O MOVIMENTO DA TORRE
+    while(torre != 0){
+        printf("Direita\n")
+        torre--;
+    }
+    
+    //SOLICITA AO USUÁRIO O NUMERO DE CASAS PARA O BISPO ANDAR
+    printf("Digite o número de casas para o bispo andar: ");
+    scanf("%d", &bispo);
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    //REALIZA O MOVIMENTO DO BISPO
+    do{
+        printf("Cima, Direita\n");
+        bispo--;
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    } while(bispo != 0);
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    //SOLICITA AO USUÁRIO O NUMERO DE CASAS PARA A RAINHA ANDAR
+    printf("Digite o número de casas para a rainha andar: ");
+    scanf("%d", &rainha);
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    //REALIZA O MOVIMENTO DA RAINHA
+    for(rainha; != 0; rainha--){
+        printf("Esquerda\n");
+    }
 
     return 0;
 }
